@@ -153,6 +153,7 @@ section{
     top:6px;
     z-index:-1;
 }
+
 .content-box .content-title .section-icon{
     position: relative;
     display:flex;
@@ -279,7 +280,7 @@ section#services .servicebox{
     display:flex;
     justify-content: space-between;
     flex-wrap:  wrap;   
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 .servicebox .service {
@@ -506,22 +507,33 @@ section#contact .content{
     }
 }
 
+@media screen and (max-width:389px){
+    section#portfolio .button-group{
+        margin-left: 20px;
+        margin-bottom: 143px;
+    } 
+    section#portfolio .grid{
+        margin-left: 72px;
+    }
+}
+
 @media screen and (max-width:365px){
 
     #header .container .logo{
         display: none;
     }
+   
     section#portfolio .content-title{
         margin-left: 20px;
     }
 
     section#portfolio .button-group{
         margin-left: 20px;
-        margin-bottom: 143px;
+        margin-bottom: 123px;
     }
     section#portfolio .grid{
         margin-top: 15px;
-        margin-left: 38px;
+        margin-left: 74px;
     }
 }
 
