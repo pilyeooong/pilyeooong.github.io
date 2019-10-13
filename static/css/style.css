@@ -1,0 +1,560 @@
+
+/* 반응형 적용시 옆에 빈공백 생기는현상 해결 */
+html, body {
+    width: auto !important;
+    overflow-x: hidden !important;
+  }
+/* -------------- header -------------------- */
+
+header{
+    /* border:0.5px solid #e6e6e8; */
+    /* background:rgba(0.0.) */
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+section{
+    border:0.5px solid #e6e6e6;
+}
+.container{
+    height:850px;
+    width: 100%;
+    /* background:green; */
+    /* border:1px solid #e6e6e6; */
+}
+
+.wrapper{
+    position: relative;
+}
+.wrapper #header{
+    position: relative;
+}
+
+.wrapper #header:after{
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../imgs/img01.jpg'); 
+    width: 100%;
+    height: 100%;
+    opacity : 0.5;
+    z-index: -1;
+}
+
+.wrapper .content-title > h2 {
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+}
+
+#header .header-menu-btn{
+    display:none;
+}
+
+#header .floating_menu{
+    /* border:1px solid #e6e6e6; */
+    /* background:#fff; */
+    position:fixed;
+    top:90%;
+    left:93%;
+    z-index:100;
+}
+
+#header .floating_menu {
+    display:flex;
+    justify-content: center;
+    /* align-items: center; */
+    width:7%;
+    height:11%;
+}
+
+#header .floating_menu a{
+    color:#000;
+    font-size: 50px;
+}
+
+
+#header .container{
+    height:790px;
+}
+
+#header .container .header-top{
+    display:flex;
+    height:30%;
+    font-weight: 500;
+}
+
+#header .container .logo{
+    color: #fff;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:30%;
+    /* border:1px solid #e6e6e6; */
+    padding-bottom: 25px;
+    padding-right: 25px;
+    margin-right: 80px;
+}
+
+#header .container nav{
+    display:flex;
+    /* border:1px solid #e6e6e6; */
+    flex-direction: column;
+    justify-content: center;
+    width:70%;
+}
+.header-top nav ul{
+    display:flex;
+    justify-content: space-around;
+}
+
+.header-top nav a{
+    font-size: 18px;
+    color:#fff;
+}
+
+#header .container .header-bottom{
+    /* border: 1px solid #e6e6e6; */
+    height:70%;
+}
+
+#header .container .header-bottom{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin:auto;
+}
+.typer-text{
+    font-family: 'Noto Sans KR', sans-serif;
+    border-right: 0.1em solid white;
+    font-size: 4vw;
+    white-space: pre;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+    padding-top: 0.2em;
+    -webkit-animation: blink 1s step-end infinite;
+            animation: blink 1s step-end infinite;
+}
+
+/* ----------------------------------------------------------- */
+.content-box .content-title .section-icon:before{
+    background-color: #91328f;
+    content:"";
+    position: absolute;
+    height:1px;
+    width:120px;
+    top:6px;
+    z-index:-1;
+}
+.content-box .content-title .section-icon{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    width:100%;
+    z-index:100;
+}
+
+section .content-box{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+section .content-box .content-title{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:30%;
+    /* padding-bottom: 60px; */
+    margin-bottom: 20px;
+}
+
+section .content-box .content{
+    height:70%;
+}
+
+/* ----------------------- Content Section ------------------------- */
+
+
+section#about .content-box .content{
+    display:flex;
+    justify-content: center;
+    font-size: 14px;
+    height:70%;
+}
+
+section#about .content-box .content .about-img img{
+    width:90%;
+    height:70%;
+    border-radius: 50px;
+}
+
+section#about .content-box .content .about-text{
+    display:flex;
+    height:70%;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+section#about .content-box .content .about-text p{
+    margin-top: 15px;
+    color:#b0aeae;
+}
+
+section#about .content-box .content button{
+    width:30%;
+    background:#fff;
+    border:1px solid #853bfe;
+    font-size: 15px;
+    padding:10px 10px;
+    margin-top: 40px;
+}
+
+#header .header-bottom .imageslide{
+    width:100%;
+    height:100%;
+}
+
+.imageslide{
+    /* display: none; */
+    text-align: center;
+    margin-top: 10%;
+}
+
+.imageslide img{
+    border-radius: 5px;
+    width:80%;
+    height:80%;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+    
+@keyframes fade{
+    from{opacity: .2}
+    to{opacity: 1} 
+}
+@-webkit-keyframes fade{
+    from{opacity: .2}
+    to{opacity: 1}
+}
+
+/* ---------------------services---------------------- */
+section#services{
+    background:#f7f7f7;
+}
+section#services .content-box{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section#services .content-box .content-title{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section#services .container .content-box .content{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+section#services .servicebox{
+    display:block;
+    height:50%;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:  wrap;   
+    margin-left: 20px;
+}
+
+.servicebox .service {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width:33.33333%;
+}
+
+.servicebox .service i{
+    border:5px solid #f4ddf8;
+}
+.servicebox .service a{
+    font-size: 70px;
+    color:#000;
+    /* background:#7c2dfe; */
+    border-radius: 100%;
+    width:30%;
+    height:30%;
+}
+
+.servicebox .service p{
+    margin-left:20px;
+}
+
+
+/* --------------------------portfolio section----------------------------- */
+
+section#portfolio .container{
+    height:1000px;
+}
+
+section#portfolio .content-title{
+    height:200px;
+}
+
+section#portfolio .content{
+    height:800px;
+}
+
+section#portfolio .button-group{
+    text-align: center;
+    height:5%;
+    margin-bottom: 50px;
+}
+section#portfolio .button-group button.button {
+    border: medium none;
+    color: #3f3f3f;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 8px;
+    padding: 13px 20px;
+    background: #fff;
+}
+
+section#portfolio .button-group button.button.is-checked{
+    position:relative;
+    color: #7c2dfe;
+}
+
+section#portfolio .button.is-checked::before {
+    background: #7c2dfe none repeat scroll 0 0;
+    bottom: 3px;
+    content: "";
+    height: 3px;
+    left: 25%;
+    position: absolute;
+    width: 50%;
+}
+
+section#portfolio .grid{
+    position: relative;
+    height:990px;
+}
+
+.portfolio-item{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-item img{
+    width:180px;
+    height:170px;
+}
+
+
+/* ---------------------contact section-------------------- */
+
+section#contact{
+    background: #f7f7f7;
+}
+section#contact .content-title{
+    margin-bottom: 30px;
+}
+
+section#contact .content{
+    display:flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    font-size: 20px;
+}
+
+@media screen and (max-width:991px){
+    section#portfolio{
+        height: 1200px;
+    }
+}
+@media screen and (max-width:800px){
+    #header .floating_menu {
+        left:91%;
+    }
+
+    #header .header-menu-btn{
+        display: block;
+        font-size: 35px;
+        cursor: pointer;
+    }
+
+    #header .container .header-top{
+        display:flex;
+        align-items: center;
+    }
+    
+    #header .container .logo{
+        position: absolute;
+        left:40%;
+        /* transform: translate(-50%, -50%); */
+    }
+    #header .container nav{
+        display:none;
+    }
+    body.menu-on {
+        overflow: hidden;
+        height: 100%;
+    }
+    body.menu-on #header .container nav{
+        display:block;
+    }
+    body.menu-on #header .container ul{
+        display:flex;
+        flex-direction: column;
+        position: absolute;
+        top:140px;
+        left: 40px;
+    }
+
+    section#portfolio{
+        height:1200px;
+    }
+}
+
+@media screen and (max-width:600px){
+    section .content-title{
+        margin-left: 15px;
+    }
+    #header .floating_menu {
+        left:90%;
+    }
+    section#about{
+        height:1000px;
+    }
+
+    section#about .content-box{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    section#about .content-box .content{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 13px;
+        height:70%;
+    } 
+
+    section#about .content-box .content img{
+        text-align: center;
+        margin-left: 30px;
+    }
+    section#about .content-box .content button{
+        display:none;
+    }
+    section#services{
+        height:1450px;
+    }
+    section#services .servicebox{
+        height: 800px;
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .servicebox .service{
+        height : 180px;
+        display:flex;
+        justify-content: space-between;
+        width: inherit;
+        margin-bottom: 20px;
+    }
+    /* section#services .servicebox .service p{
+        display:none;
+    } */
+
+    section#portfolio {
+        height:1400px;
+    }
+
+    section#portfolio .grid{
+        margin-left: 90px;
+    }
+}
+  
+@media screen and (max-width:440px){
+    section#portfolio {
+        height:2500px;
+    }
+    section#portfolio .grid{
+        margin-left: 82px;
+    }
+}
+
+@media screen and (max-width:365px){
+
+    #header .container .logo{
+        display: none;
+    }
+    section#portfolio .content-title{
+        margin-left: 20px;
+    }
+
+    section#portfolio .button-group{
+        margin-left: 20px;
+        margin-bottom: 143px;
+    }
+    section#portfolio .grid{
+        margin-top: 15px;
+        margin-left: 38px;
+    }
+}
+
+@media screen and (max-width:275px){
+    section#about .content-box .content img{
+        text-align: center;
+        margin-left: 10px;
+    }
+    section#about .content-box .about-text{
+        margin-top: 50px;
+    } 
+
+    section#services .servicebox{
+        margin-left: 0px;
+        margin-right: 3px;
+    }
+
+    section#services .servicebox .service a{
+        margin-left:12px; 
+    }
+
+    section#portfolio {
+        height:2660px;
+    }
+
+    section#portfolio .grid{
+        margin-top: 15px;
+        margin-left: 18px;
+    }
+
+    section#portfolio .button-group{
+        margin-left: 20px;
+        margin-bottom: 230px;
+    }
+
+}
