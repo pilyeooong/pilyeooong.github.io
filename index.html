@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <script src="static/js/jquery-3.1.1.min.js"></script>
+    <title>index</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header id="header">
+            <div class="floating_menu">
+                <ul>
+                    <li><a onclick="gototop()"><i class="fas fa-arrow-alt-circle-up"></i></a></li>
+                </ul>
+            </div>
+            <div class="container">
+                <div class="header-top">
+                    <button class="header-menu-btn">
+                        <i class="fas fa-bars"></i>
+                        <span class="btn-label"></span>
+                    </button>
+                    <div class="logo">
+                        <h2>logoooOooo</h2>
+                    </div>
+                    <nav class="menu">
+                        <ul>
+                            <li><a onclick="fnMove('1')">ABOUT</a></li>
+                            <li><a onclick="fnMove('2')">SERVICES</a></li>
+                            <li><a onclick="fnMove('3')">PORTFOLIO</a></li>
+                            <li><a onclick="fnMove('4')">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-bottom">
+                    <div class="imageslide fade">
+                        <img src="static/imgs/ocean1.jpg" alt="ocean1">
+                    </div>
+                        
+                    <div class="imageslide fade">
+                        <img src="static/imgs/ocean2.jpeg" alt="ocean2">
+                    </div>
+
+                    <div class="imageslide fade">
+                        <img src="static/imgs/cafe2.jpg" alt="cafe2">
+                    </div>
+
+                    <div class="imageslide fade">
+                        <img src="static/imgs/cafe3.jpg" alt="cafe3">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="about" class="section-1">
+            <div class="container">
+                <div class="content-box">
+                    <div class="content-title">
+                        <h2>ABOUT</h2>
+                        <div class="section-icon">
+                            <img src="static/imgs/section-icon.jpg" alt="section-icon">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="about-img">
+                            <img src="static/imgs/img02.jpg" alt="img02">
+                        </div>
+                        <div class="about-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Totam fugit quia aliquid. Laboriosam quia dolorem vel ex quam error pariatur, minima, facere fugit optio rerum ad? Corporis odio id repellat?
+                            <h3>Lorem</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, similique ipsam consectetur necessitatibus nemo maiores molestias, ullam officiis et ratione quidem quia optio culpa quasi nihil incidunt dignissimos velit debitis.
+                            </p>
+                            <h3>Lorem, ipsum dolor.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ipsa!</p>
+
+                            <button>Button</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section-2">
+            <div class="container">
+                <div class="content-box">
+                    <div class="content-title">
+                        <h2>SERVICES</h2>
+                        <div class="section-icon">
+                            <img src="static/imgs/section-icon.jpg" alt="section-icon">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="servicebox">
+                            <div class="service">
+                                <a href="#"><i class="fas fa-camera-retro"></i></a>
+                                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, architecto.</p>
+                            </div>
+                            <div class="service">
+                                <a href="#"><i class="fab fa-apple"></i></a>
+                                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, architecto.</p>
+                            </div>
+                            <div class="service">
+                                <a href="#"><i class="fab fa-android"></i></a>
+                                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, architecto.</p>
+                            </div>
+                        </div>
+
+                    <div class="servicebox">
+                        <div class="service">
+                            <a href="#"><i class="fab fa-aws"></i></a>
+                            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, architecto.</p>
+                        </div>
+                        
+                        <div class="service">
+                            <a href="#"><i class="fas fa-bell"></i></a>
+                            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, architecto.</p>
+                        </div>
+                       
+                        <div class="service">
+                            <a href="#"><i class="fas fa-bookmark"></i></a>
+                            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, architecto.</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section-3">
+            <div class="container">
+                <div class="content-box">
+                    <div class="content-title">
+                        <h2>PORTFOLIO</h2>
+                        <div class="section-icon">
+                            <img src="static/imgs/section-icon.jpg" alt="section-icon">
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <div class="button-group filters-button-group">
+                            <button data-filter="*" class="button is-checked">All</button>
+                            <button data-filter=".PROGRAMMING" class="button">PROGRAMMING</button>
+                            <button data-filter=".WEB" class="button">WEB</button>
+                            <button data-filter=".FRONTEND" class="button">FRONTEND</button>
+                            <button data-filter=".BACKEND" class="button">BACKEND</button>
+                        </div>
+                        
+                        <div class="grid">
+                            <div class="portfolio-item PROGRAMMING" style="position: absolute; left: 0px; top: 0px;">
+                                <img src="static/imgs/python.png" alt="">
+                                <h4>PYTHON</h4>
+                                <div class="portfolio-text">
+                                    <a href="static/imgs/portfolio1.jpg"></a>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-item PROGRAMMING" style="position: absolute; left: 300px; top: 0px;">
+                                <img src="static/imgs/cprogramming.png" alt="">
+                                <h4>C PROGRAMMING</h4>
+                                <div class="portfolio-text">
+                                    <a href="static/imgs/portfolio2.jpg"></a>
+                                </div>
+                            </div>
+                            
+                            <div class= "portfolio-item PROGRAMMING" style="position: absolute; left: 600px; top: 0px;">
+                                <img src="static/imgs/java.png" alt="" >
+                                <h4>JAVA</h4>
+                                <div class="portfolio-text">
+                                    <a href="static/imgs/portfolio3.jpg"></a>
+                                </div>
+                            </div>
+
+                            <div class= "portfolio-item WEB" style="position: absolute; left: 0px; top: 330px;">
+                                <img src="static/imgs/HTML.png" alt="" >
+                                <h4>HTML</h4>
+                                <div class="portfolio-text">
+                                    <a href="static/imgs/portfolio4.jpg"></a>
+                                </div>
+                            </div>
+
+                            <div class= "portfolio-item WEB" style="position: absolute; left: 300px; top: 330px;">
+                                <img src="static/imgs/css.png" alt="" >
+                                <h4>CSS</h4>
+                                <div class="portfolio-text">
+                                    <a href="static/imgs/portfolio5.jpg"></a>
+                                </div>
+                            </div>
+
+                            <div class= "portfolio-item WEB" style="position: absolute; left: 600px; top: 330px;">
+                                <img src="static/imgs/javascript.png" alt="" >
+                                <h4>JAVASCRIPT</h4>
+                                <div class="portfolio-text">
+                                    <a href="static/imgs/portfolio6.jpg"></a>
+                                </div>
+                            </div>
+
+                            <div class= "portfolio-item FRONTEND" style="position: absolute; left: 600px; top: 330px;">
+                                <img src="static/imgs/vuejs.png" alt="" >
+                                <h4>VUE.JS</h4>
+                                <div class="portfolio-text">
+                                    <a href="static/imgs/portfolio6.jpg"></a>
+                                </div>
+                            </div>
+
+                            <div class= "portfolio-item FRONTEND" style="position: absolute; left: 600px; top: 330px;">
+                                <img src="static/imgs/reactjs.png" alt="" >
+                                <h4>REACT.JS</h4>
+                                <div class="portfolio-text">
+                                    <a href="static/imgs/portfolio6.jpg"></a>
+                                </div>
+                            </div>
+
+                            <div class= "portfolio-item BACKEND" style="position: absolute; left: 600px; top: 330px;">
+                                <img src="static/imgs/django.png" alt="" >
+                                <h4>DJANGO</h4>
+                                <div class="portfolio-text">
+                                    <a href="static/imgs/portfolio6.jpg"></a>
+                                </div>
+                            </div>
+
+                            <div class= "portfolio-item BACKEND" style="position: absolute; left: 600px; top: 330px;">
+                                <img src="static/imgs/node.png" alt="" >
+                                <h4>NODE.JS</h4>
+                                <div class="portfolio-text">
+                                    <a href="static/imgs/portfolio6.jpg"></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-4">
+            <div class="container">
+                <div class="content-box">
+                    <div class="content-title">
+                        <h2>CONTACT</h2>
+                        <div class="section-icon">
+                            <img src="static/imgs/section-icon.jpg" alt="section-icon">
+                        </div> 
+                    </div>
+                    <div class="content">
+                        <h2><i class="fab fa-github"></i>  GITHUB</h2><a href="https://www.github.com/pilyeooong">www.github.com/pilyeooong</a>
+                        <br><br>
+                        <h2><i class="fas fa-paper-plane"></i>  EMAIL</h2><p>pilyeooong@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            copyright
+        </footer>
+    </div>
+
+    <script src="static/js/main.js"></script>
+    <script src="static/js/isotope.pkgd.js"></script>
+    <script src="static/js/jquery.magnific-popup.min.js"></script>
+</body>
+</html>
