@@ -41,7 +41,7 @@
 $(document).ready(function (){
     var $grid =$('.grid').isotope({
         // options
-        itemSelector: '.portfolio-item',
+        itemSelector: '.skills-item',
         layoutMode: 'fitRows'
     });
     var filterFns = {
@@ -69,7 +69,7 @@ $(document).ready(function (){
         });
     });
 
-    $('.portfolio-item').magnificPopup({
+    $('.skills-item').magnificPopup({
         delegate: 'a',
         type: 'image',
         closeOnContentClick: false,

@@ -192,7 +192,9 @@ section .content-box .content{
 }
 
 /* ----------------------- Content Section ------------------------- */
-
+section#about{
+    background: #f7f7f7;
+}
 section#about .name{
     display: flex;
     font-weight: 600;
@@ -207,14 +209,14 @@ section#about .name p{
 section#about .info{
     display:flex;
     flex-direction: column;
+    justify-content: center;
     width:400px;
 }
-
-
 
 section#about .info a{
     color: black;
     margin-right: 5px;
+    margin-bottom: 10px;
     font-size: 20px;
 }
 
@@ -237,6 +239,7 @@ section#about .content-box .content .about-text{
     height:70%;
     flex-direction: column;
     justify-content: center;
+    /* align-items: center; */
     padding-top: 10px;
 }
 
@@ -287,81 +290,96 @@ section#about .content-box .content button{
     to{opacity: 1}
 }
 
-/* ---------------------services---------------------- */
-section#services{
+/* ---------------------projects---------------------- */
+section#projects{
     background:#f7f7f7;
+    height: 1100px;
 }
-section#services .content-box{
+
+section#projects .container{
+    height:80%;
+}
+section#projects .content-box{
     display:flex;
     flex-direction: column;
     justify-content: center;
 }
-section#services .content-box .content-title{
+section#projects .content-box .content-title{
     display:flex;
     flex-direction: column;
     justify-content: center;
 }
 
-section#services .container .content-box .content{
+section#projects .container .content-box .content{
     display:flex;
     flex-direction: column;
-    margin-bottom: 40px;
+    
+    
 }
 
-section#services .servicebox{
+section#projects .projectbox{
     display:block;
-    height:50%;
+    height:70%;
     display:flex;
-    justify-content: space-between;
-    flex-wrap:  wrap;   
-    margin-left: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-.servicebox .service {
+.projectbox .project {
     display:flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width:33.33333%;
+    width:50%;
 }
 
-.servicebox .service i{
+.projectbox .project i{
     border:5px solid #f4ddf8;
 }
-.servicebox .service a{
+.projectbox .project a{
     font-size: 70px;
     color:#000;
     /* background:#7c2dfe; */
-    border-radius: 100%;
-    width:30%;
+    /* border-radius: 100%; */
+    width:100%;
     height:30%;
 }
-
-.servicebox .service p{
+.projectbox .project a img{
+    width:100%;
+    height:200px;
+}
+.projectbox .project .project-info{
+    margin-top: 50px;
+    text-align: center;
+}
+.projectbox .project p{
     margin-left:20px;
 }
 
 
-/* --------------------------portfolio section----------------------------- */
+/* --------------------------skills section----------------------------- */
 
-section#portfolio .container{
+section#skills{
+    background:#fff;
+}
+section#skills .container{
     height:1000px;
 }
 
-section#portfolio .content-title{
+section#skills .content-title{
     height:200px;
 }
 
-section#portfolio .content{
+section#skills .content{
     height:800px;
 }
 
-section#portfolio .button-group{
+section#skills .button-group{
     text-align: center;
     height:5%;
     margin-bottom: 50px;
 }
-section#portfolio .button-group button.button {
+section#skills .button-group button.button {
     border: medium none;
     color: #3f3f3f;
     font-family: "Open Sans", sans-serif;
@@ -372,12 +390,12 @@ section#portfolio .button-group button.button {
     background: #fff;
 }
 
-section#portfolio .button-group button.button.is-checked{
+section#skills .button-group button.button.is-checked{
     position:relative;
     color: #7c2dfe;
 }
 
-section#portfolio .button.is-checked::before {
+section#skills .button.is-checked::before {
     background: #7c2dfe none repeat scroll 0 0;
     bottom: 3px;
     content: "";
@@ -387,18 +405,19 @@ section#portfolio .button.is-checked::before {
     width: 50%;
 }
 
-section#portfolio .grid{
+section#skills .grid{
     position: relative;
     height:990px;
+    margin-top: 100px;
 }
 
-.portfolio-item{
+.skills-item{
     display:flex;
     flex-direction: column;
     align-items: center;
 }
 
-.portfolio-item img{
+.skills-item img{
     width:180px;
     height:170px;
 }
@@ -407,7 +426,7 @@ section#portfolio .grid{
 /* ---------------------contact section-------------------- */
 
 section#contact{
-    background: #f7f7f7;
+    background: #fff;
 }
 section#contact .content-title{
     margin-bottom: 30px;
@@ -422,7 +441,7 @@ section#contact .content{
 }
 
 @media screen and (max-width:991px){
-    section#portfolio{
+    section#skills{
         height: 1200px;
     }
 }
@@ -433,6 +452,8 @@ section#contact .content{
 
     #header .header-menu-btn{
         display: block;
+        color:#fff;
+        margin-bottom: 10px;
         font-size: 35px;
         cursor: pointer;
     }
@@ -465,7 +486,7 @@ section#contact .content{
         left: 40px;
     }
 
-    section#portfolio{
+    section#skills{
         height:1200px;
     }
 }
@@ -503,48 +524,56 @@ section#contact .content{
     section#about .content-box .content button{
         display:none;
     }
-    section#services{
+    section#projects{
         height:1450px;
     }
-    section#services .servicebox{
-        height: 800px;
+
+    section#projects .content{
+       
+        justify-content: space-around;
+        align-items: inherit;
+    }
+    section#projects .projectbox{
+        height: 1000px;
         display:flex;
         flex-direction: column;
         text-align: center;
+        margin-bottom: 50px;
     }
-    .servicebox .service{
+    .projectbox .project{
         height : 180px;
         display:flex;
         justify-content: space-between;
         width: inherit;
         margin-bottom: 20px;
     }
-   
-
-    section#portfolio {
+    .projectbox .project .project-info{
+        margin-top: 150px;
+    }
+    section#skills {
         height:1400px;
     }
 
-    section#portfolio .grid{
+    section#skills .grid{
         margin-left: 95px;
     }
 }
   
-@media screen and (max-width:440px){
-    section#portfolio {
+@media screen and (max-width:490px){
+    section#skills {
         height:2500px;
     }
-    section#portfolio .grid{
+    section#skills .grid{
         margin-left: 95px;
     }
 }
 
 @media screen and (max-width:389px){
-    section#portfolio .button-group{
+    section#skills .button-group{
         margin-left: 20px;
         margin-bottom: 143px;
     } 
-    section#portfolio .grid{
+    section#skills .grid{
         margin-left: 72px;
     }
 }
@@ -555,15 +584,15 @@ section#contact .content{
         display: none;
     }
    
-    section#portfolio .content-title{
+    section#skills .content-title{
         margin-left: 20px;
     }
 
-    section#portfolio .button-group{
+    section#skills .button-group{
         margin-left: 20px;
         margin-bottom: 123px;
     }
-    section#portfolio .grid{
+    section#skills .grid{
         margin-top: 15px;
         margin-left: 74px;
     }
@@ -578,25 +607,25 @@ section#contact .content{
         margin-top: 50px;
     } 
 
-    section#services .servicebox{
+    section#projects .projectbox{
         margin-left: 0px;
         margin-right: 3px;
     }
 
-    section#services .servicebox .service a{
+    section#projects .projectbox .project a{
         margin-left:12px; 
     }
 
-    section#portfolio {
+    section#skills {
         height:2660px;
     }
 
-    section#portfolio .grid{
+    section#skills .grid{
         margin-top: 15px;
         margin-left: 18px;
     }
 
-    section#portfolio .button-group{
+    section#skills .button-group{
         margin-left: 20px;
         margin-bottom: 230px;
     }
