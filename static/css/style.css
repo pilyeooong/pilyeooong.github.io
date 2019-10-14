@@ -39,17 +39,18 @@ section{
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url('../imgs/img01.jpg'); 
+    background-image: url('../imgs/background4.jpg');  
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
-    opacity : 0.5;
+    opacity : 0.8;
     z-index: -1;
 }
 
 .wrapper .content-title > h2 {
     font-size: 40px;
     font-weight: 800;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', 'sans-serif';
 }
 
 #header .header-menu-btn{
@@ -107,7 +108,7 @@ section{
     /* border:1px solid #e6e6e6; */
     flex-direction: column;
     justify-content: center;
-    width:70%;
+    width:100%;
 }
 .header-top nav ul{
     display:flex;
@@ -130,6 +131,14 @@ section{
     align-items: center;
     position: relative;
     margin:auto;
+}
+#header .container .header-bottom h1{
+    margin-bottom:150px;
+    color:#fff;
+}
+
+.typer{
+    font-size: 55px;
 }
 .typer-text{
     font-family: 'Noto Sans KR', sans-serif;
@@ -184,6 +193,30 @@ section .content-box .content{
 
 /* ----------------------- Content Section ------------------------- */
 
+section#about .name{
+    display: flex;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+section#about .name p{
+    margin-left: 10px;
+    padding-top: 15px;
+}
+
+section#about .info{
+    display:flex;
+    flex-direction: column;
+    width:400px;
+}
+
+
+
+section#about .info a{
+    color: black;
+    margin-right: 5px;
+    font-size: 20px;
+}
 
 section#about .content-box .content{
     display:flex;
@@ -200,6 +233,7 @@ section#about .content-box .content .about-img img{
 
 section#about .content-box .content .about-text{
     display:flex;
+    /* margin-right: 2px; */
     height:70%;
     flex-direction: column;
     justify-content: center;
@@ -485,9 +519,7 @@ section#contact .content{
         width: inherit;
         margin-bottom: 20px;
     }
-    /* section#services .servicebox .service p{
-        display:none;
-    } */
+   
 
     section#portfolio {
         height:1400px;
