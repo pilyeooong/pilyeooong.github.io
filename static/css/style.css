@@ -489,6 +489,11 @@ section#contact .content{
     section#skills{
         height:1200px;
     }
+
+    .projectbox .project .project-info{
+        margin-top: 150px;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width:600px){
