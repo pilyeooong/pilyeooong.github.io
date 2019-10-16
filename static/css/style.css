@@ -297,7 +297,7 @@ section#projects{
 }
 
 section#projects .container{
-    height:80%;
+    height:100%;
 }
 section#projects .content-box{
     display:flex;
@@ -308,6 +308,7 @@ section#projects .content-box .content-title{
     display:flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 0px;
 }
 
 section#projects .container .content-box .content{
@@ -319,7 +320,7 @@ section#projects .container .content-box .content{
 section#projects .projectbox{
     display:block;
     max-width:1000px;
-    height:70%;
+    height:100%;
     display:flex;
     justify-content: center;
     margin-bottom: 20px;
@@ -328,8 +329,9 @@ section#projects .projectbox{
 .projectbox .project {
     display:flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    height:50%;
     width:100%;
 }
 
@@ -348,8 +350,9 @@ section#projects .projectbox{
     width:100%;
     height:400px;
 }
-.projectbox .project .project-info{
-    margin-top: 70px;
+.projectbox .project-info{
+    height:50%;
+    margin-top: 30px;
     text-align: center;
 }
 .projectbox .project p{
@@ -499,13 +502,6 @@ section#contact .content{
         top:140px;
         left: 40px;
     }
-
-    .projectbox .project .project-info{
-        margin-top: 100px;
-        text-align: center;
-    }
-
-
 }
 
 @media screen and (max-width:600px){
@@ -542,7 +538,7 @@ section#contact .content{
         display:none;
     }
     section#projects{
-        height:1450px;
+        height:1200px;
     }
 
     section#projects .content{
@@ -558,15 +554,12 @@ section#contact .content{
         margin-bottom: 50px;
     }
     .projectbox .project{
-        height : 300px;
         display:flex;
         justify-content: space-between;
         width: inherit;
         margin-bottom: 20px;
     }
-    .projectbox .project .project-info{
-        margin-top: 400px;
-    }
+    
     section#skills {
         height:1400px;
     }
