@@ -558,7 +558,7 @@ section#contact .content{
         margin-bottom: 50px;
     }
     .projectbox .project{
-        height : 180px;
+        height : 300px;
         display:flex;
         justify-content: space-between;
         width: inherit;
