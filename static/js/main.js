@@ -18,28 +18,46 @@
         $('html, body').animate({scrollTop : offset.top}, 400);
     }
 // ---------------image sliding (header) ----------------------
-var slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+var slideWrapper = document.querySelector('#projects .content');
+// console.log(slideWrapper);
+var slides = document.querySelectorAll('.item');
+var totalSlides = slides.length;
+console.log(totalSlides);
+var sliderWidth = slideWrapper.clientWidth;
+var slideIndex = 0;
+var slider = document.querySelector('#slider');
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+slider.style.width = sliderWidth * totalSlides + 'px';
+console.log(slider.style.width);
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("projectbox");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  slides[slideIndex-1].style.display = "block";  
+    slideIndex = n;
+    if (slideIndex == -1) {
+        slideIndex = totalSlides - 1;
+    } else if (slideIndex === totalSlides) {
+        slideIndex = 0;
+    }
+    slider.style.left = -(sliderWidth * slideIndex) + 'px';
 }
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+var nextBtn = document.getElementById('next');
+var prevBtn = document.getElementById('previous');
+
+nextBtn.addEventListener('click', function () {
+    plusSlides(1);
+});
+prevBtn.addEventListener('click', function () {
+    plusSlides(-1);
+});
 
 // var slideIndex = 0;
 // showSlides();
