@@ -337,9 +337,21 @@ section#projects ul li img{
 }
 
 .project-info{
-    margin-top: 30px; 
+    margin-top: 50px; 
     text-align: center;
 }
+.project-info h3{
+    font-size: 35px;
+    vertical-align: top;
+}
+.project-info p{
+    padding:10px 0 0 0;
+    color:#777;
+    font-weight: 600;
+    /* letter-spacing: -1px; */
+    font-size: 20px;
+}
+
 
 #projects ul{
     -webkit-transition: all 0.25s cubic-bezier(1, .01, .32, 1);
