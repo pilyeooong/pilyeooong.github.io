@@ -222,7 +222,6 @@ section#about .content-box .content{
     font-size: 14px;
     height:70%;
 }
-
 .about-img{
     width:55%;
 }
@@ -297,12 +296,15 @@ section#projects{
 }
 
 section#projects .container{
+    width:90%;
     height:100%;
+    position: relative;
 }
 section#projects .content-box{
     display:flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 section#projects .content-box .content-title{
     display:flex;
@@ -312,75 +314,72 @@ section#projects .content-box .content-title{
 }
 
 section#projects .container .content-box .content{
-    max-width:1200px;
+    width:90%;
     height:100%;
     position:relative;
     overflow:hidden;
 }
-
-section#projects ul{
-    position: absolute;
-    top:0;
-    left:0;
+section#projects .container .content-box .content ul{
     display: flex;
-}
-section#projects ul li{
-    max-width:1200px;
-    height:900px;
-    /* float:left; */
-    position: relative;
-}
-
-section#projects ul li img{
-    width:100%;
-    height:500px;
-}
-
-.project-info{
-    margin-top: 50px; 
-    text-align: center;
-}
-.project-info h3{
-    font-size: 35px;
-    vertical-align: top;
-}
-.project-info p{
-    padding:10px 0 0 0;
-    color:#777;
-    font-weight: 600;
-    /* letter-spacing: -1px; */
-    font-size: 20px;
-}
-
-
-#projects ul{
+    position: absolute;
+    height: 80%;
+    left:0;
     -webkit-transition: all 0.25s cubic-bezier(1, .01, .32, 1);
     -o-transition: all 0.25s cubic-bezier(1, .01, .32, 1);
     transition: all 0.25s cubic-bezier(1, .01, .32, 1);
 }
-    
-
-/* section#projects .projectbox{
-    display:block;
-    max-width:1000px;
+section#projects .container .content-box .content li{
+    display: flex;
+    width:100%;
+}
+.project-box span{
+    font-weight: 700;
+    font-size: 25px;
+}
+section#projects .img-box{
+    display: flex;
+    flex-wrap: wrap;
+    width:50%;
     height:100%;
-    display:flex;
-    justify-content: center;
-    margin-bottom: 20px;
 }
 
-.projectbox .project {
-    display:flex;
-    flex-direction: column;
+section#projects .img-box img{
+    width:50%;
     height:50%;
-    width:100%;
+    padding: 2rem 1rem;
+}
+section#projects .project-box{
+    width:50%;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+.project-box-content{
+    margin-top: 1rem;
+    padding-left: 2.5rem;
+}
+.project-function{
+    margin-top: 2.5rem;
+}
+.project-description{
+    margin-top: 2.5rem;
+}
+.function-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.function-list h5{
+    padding-left: 2rem;
+    margin-right: 1.5rem;
+}
+/* #projects ul{
+
 } */
 
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 25%;
+  top: 40%;
   color: black;
   font-size: 50px;
   transition: 0.3s ease;
@@ -388,8 +387,8 @@ section#projects ul li img{
 }
 
 .prev{
-    /* left:-50px; */
-    left:20px;
+    left:0px;
+    z-index: 100;
 }
 .next{
     right:20px;
