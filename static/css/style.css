@@ -293,6 +293,7 @@ section#about .content-box .content button{
 section#projects{
     background:#f7f7f7;
     height: 1170px;
+    
 }
 
 section#projects .container{
@@ -318,6 +319,7 @@ section#projects .container .content-box .content{
     height:100%;
     position:relative;
     overflow:hidden;
+    font-family: 'Roboto', sans-serif;
 }
 section#projects .container .content-box .content ul{
     display: flex;
@@ -332,8 +334,8 @@ section#projects .container .content-box .content li{
     display: flex;
     width:100%;
 }
-.project-box span{
-    font-weight: 700;
+.project-box .big-title{
+    font-weight: bold;
     font-size: 25px;
 }
 section#projects .img-box{
@@ -351,35 +353,47 @@ section#projects .img-box img{
 section#projects .project-box{
     width:50%;
     padding-top: 2rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
+}
+.project-title{
+    font-weight: bold;
+    font-size: 32px;
 }
 .project-box-content{
     margin-top: 1rem;
-    padding-left: 2.5rem;
+    padding-left: 2rem;
+}
+
+.project-box-content h5 {
+    color: #5B5A5A;
+    font-size: 16px;
+}
+
+.project-stack{
+    font-weight: 600;
+    color: #5B5A5A;
 }
 .project-function{
-    margin-top: 2.5rem;
+    margin-top: 5rem;
 }
 .project-description{
-    margin-top: 2.5rem;
+    margin-top: 5rem;
 }
 .function-list{
     display: flex;
     flex-wrap: wrap;
+    color: #5B5A5A;
 }
 .function-list h5{
     padding-left: 2rem;
     margin-right: 1.5rem;
 }
-/* #projects ul{
-
-} */
 
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  top: 50%;
   color: black;
   font-size: 50px;
   transition: 0.3s ease;
@@ -388,10 +402,9 @@ section#projects .project-box{
 
 .prev{
     left:0px;
-    z-index: 100;
 }
 .next{
-    right:20px;
+    right:0px;
 }
 
 /* --------------------------skills section----------------------------- */
@@ -574,13 +587,24 @@ section#contact .content{
     section#projects{
         height:1200px;
     }
-
-    section#projects .content{
-        position:relative;
-        justify-content: space-around;
-        align-items: inherit;
+    section#projects .content-box .content-title{
+        height:15%;
     }
-    
+    /* section#projects .container .content-box .content .item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } */
+    section#projects .project-box{
+        width:100%;
+        padding-left: 0;
+        padding-top: 1rem;
+    }
+    section#projects .img-box{
+        display: none;
+    }
+
     section#skills {
         height:1400px;
     }
