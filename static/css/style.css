@@ -504,6 +504,9 @@ section#contact .content{
     .next{
         right:0;
     }
+    .section#projects{
+        height: 1300px;
+    }
 }
 @media screen and (max-width:991px){
     section#skills{
@@ -585,7 +588,7 @@ section#contact .content{
         display:none;
     }
     section#projects{
-        height:1200px;
+        height:1300px;
     }
     section#projects .content-box .content-title{
         height:15%;
