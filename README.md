@@ -1,3 +1,3 @@
 # 💻 Pilyeong Heo
 
-Backend Developer
+Service Developer
