@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mystic Eight - 개인정보처리방침</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.7;
+      color: #333;
+      background: #fafafa;
+      padding: 20px;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 40px 32px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    h1 { font-size: 24px; margin-bottom: 8px; color: #111; }
+    h2 { font-size: 18px; margin-top: 32px; margin-bottom: 12px; color: #222; border-bottom: 1px solid #eee; padding-bottom: 6px; }
+    p, li { font-size: 15px; margin-bottom: 8px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    .date { font-size: 13px; color: #888; margin-bottom: 24px; }
+    .lang-switch { text-align: right; margin-bottom: 20px; }
+    .lang-switch a { font-size: 14px; color: #8B6914; text-decoration: none; margin-left: 12px; }
+    a { color: #8B6914; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="lang-switch">
+      <a href="privacy-ko.html">한국어</a>
+      <a href="privacy-en.html">English</a>
+    </div>
+
+    <h1>개인정보처리방침</h1>
+    <p class="date">시행일: 2026년 4월 16일</p>
+
+    <p>「Mystic Eight」(이하 "앱")는 이용자의 개인정보를 소중히 여기며, 「개인정보 보호법」 및 관련 법령을 준수합니다. 본 방침은 앱이 수집하는 정보와 이용 방법을 안내합니다.</p>
+
+    <h2>1. 수집하는 정보</h2>
+    <p>앱은 별도의 회원가입이나 로그인을 요구하지 않습니다. 다만 서비스 제공을 위해 아래 정보를 처리합니다.</p>
+    <ul>
+      <li><strong>익명 사용자 식별자</strong>: Supabase 익명 인증이 자동 생성하는 랜덤 ID입니다. 이름, 이메일 등 개인 식별 정보와 연결되지 않으며 기기에 저장됩니다.</li>
+      <li><strong>생년월일시</strong>: 사용자가 직접 입력합니다. 유료 해석 결제 시 팔자 계산 및 AI 해석을 위해 서버로 전송됩니다. 기기 내에는 저장되지 않습니다.</li>
+      <li><strong>결제 트랜잭션 ID</strong>: Apple IAP 결제 후 발급되는 트랜잭션 ID를 서버에 저장하여 중복 결제를 방지합니다.</li>
+      <li><strong>호출 기록</strong>: 시간당 최대 20회 요청 제한을 위해 호출 시각을 서버에 기록합니다.</li>
+      <li><strong>해석 히스토리</strong>: 최근 운세 해석 결과는 기기 내 로컬 저장소(AsyncStorage)에만 저장되며 서버로 전송되지 않습니다.</li>
+    </ul>
+
+    <h2>2. 정보의 이용 목적</h2>
+    <ul>
+      <li>사주 팔자 계산 및 AI 운세 해석 제공</li>
+      <li>결제 중복 사용 방지</li>
+      <li>서비스 남용 방지(요청 횟수 제한)</li>
+    </ul>
+
+    <h2>3. 제3자 제공 및 처리 위탁</h2>
+    <ul>
+      <li><strong>Supabase</strong>: 익명 인증, 결제 중복 방지, 요청 기록 저장에 사용합니다. (<a href="https://supabase.com/privacy" target="_blank">Supabase 개인정보처리방침</a>)</li>
+      <li><strong>OpenAI</strong>: 유료 결제 후 팔자 데이터(생년월일 기반 추상화 정보)를 전송하여 AI 해석을 생성합니다. 개인 식별 정보는 전송되지 않습니다. (<a href="https://openai.com/policies/privacy-policy" target="_blank">OpenAI 개인정보처리방침</a>)</li>
+      <li><strong>Apple</strong>: IAP 결제는 Apple을 통해 처리됩니다. (<a href="https://www.apple.com/legal/privacy/ko-ww/" target="_blank">Apple 개인정보처리방침</a>)</li>
+    </ul>
+    <p>위 경우 외에는 이용자 정보를 제3자에게 제공하지 않습니다.</p>
+
+    <h2>4. 정보의 보유 및 이용 기간</h2>
+    <ul>
+      <li>익명 사용자 ID 및 결제 트랜잭션 ID: 서비스 제공 목적 달성 시까지 보유</li>
+      <li>요청 기록(rate limit): 1시간 경과 후 자동 만료</li>
+      <li>기기 내 해석 히스토리: 앱 삭제 시 자동 삭제</li>
+    </ul>
+
+    <h2>5. 아동의 개인정보</h2>
+    <p>앱은 만 13세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
+
+    <h2>6. 이용자의 권리</h2>
+    <p>이용자는 언제든지 앱을 삭제함으로써 기기 내 저장 데이터를 제거할 수 있습니다. 서버 측 데이터(익명 ID, 트랜잭션 기록) 삭제를 원하시면 아래 연락처로 문의해 주세요.</p>
+
+    <h2>7. 방침 변경</h2>
+    <p>본 방침이 변경될 경우 이 페이지를 통해 공지합니다.</p>
+
+    <h2>8. 개인정보 보호책임자 및 문의</h2>
+    <p>이메일: <a href="mailto:pilyeooong@gmail.com">pilyeooong@gmail.com</a></p>
+  </div>
+</body>
+</html>
