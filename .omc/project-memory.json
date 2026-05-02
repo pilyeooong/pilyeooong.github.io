@@ -1,0 +1,72 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1772963951855,
+  "projectRoot": "/Users/heopil-yeong/Documents/pilyeooong.github.io",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [],
+    "gitBranches": {
+      "defaultBranch": "master",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "archive": {
+      "path": "archive",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1772963951792,
+      "keyFiles": [
+        "index_old.html"
+      ]
+    },
+    "chung-navi": {
+      "path": "chung-navi",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1772963951793,
+      "keyFiles": [
+        "privacy-policy.html"
+      ]
+    },
+    "guess-this-note": {
+      "path": "guess-this-note",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1772963951793,
+      "keyFiles": [
+        "privacy-policy.html"
+      ]
+    },
+    "archive/static": {
+      "path": "archive/static",
+      "purpose": "Static files",
+      "fileCount": 0,
+      "lastAccessed": 1772963951793,
+      "keyFiles": []
+    }
+  },
+  "hotPaths": [],
+  "userDirectives": []
+}
