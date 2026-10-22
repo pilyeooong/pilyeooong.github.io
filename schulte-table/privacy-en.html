@@ -16,19 +16,20 @@
         <h1>Privacy Policy</h1>
         <p><strong>App Name:</strong> Schulte Table - Focus Test</p>
         <p><strong>Developer:</strong> pilyeooong</p>
-        <p><strong>Last Updated:</strong> September 30, 2026</p>
+        <p><strong>Last Updated:</strong> October 22, 2026</p>
 
         <h2>1. Personal Information Collection</h2>
-        <p>This app <strong>does not collect any personal information</strong> from users. No account registration, sign-in, or contact details are required. The only data sent to a server is the anonymous leaderboard record described in section 3.</p>
+        <p>This app <strong>does not collect any personal information</strong> from users. No account registration, sign-in, or contact details are required. The only data sent to a server is the anonymous leaderboard record and the anonymous usage statistics, both described in section 3.</p>
 
         <h2>2. Local Data Storage</h2>
-        <p>The app stores the following information locally on your device (using AsyncStorage). Except for the leaderboard record in section 3, this data never leaves your device:</p>
+        <p>The app stores the following information locally on your device (using AsyncStorage). Except for the leaderboard record and the anonymous usage statistics in section 3, this data never leaves your device:</p>
         <ul>
             <li>Your recent game history and personal best completion times</li>
             <li>Daily Challenge completion and streak</li>
             <li>Your selected language, grid size, order and mode settings</li>
             <li>Pro purchase status (iOS only — the Android version has no in-app purchase)</li>
             <li>A random leaderboard identifier (see section 3)</li>
+            <li>A random identifier for anonymous usage statistics (see section 3)</li>
         </ul>
         <p>Uninstalling the app removes all locally stored data.</p>
 
@@ -42,8 +43,20 @@
         <p><strong>Purpose:</strong> operating the world leaderboard (showing top times and your place). <strong>Retention:</strong> the record is kept on the server as long as the leaderboard operates; only your best time per board is stored. Other players never see the identifier — the board shows a 4-character tag derived from it.</p>
         <p>Leaderboard records are stored using <strong>Supabase</strong>, a cloud database service (<a href="https://supabase.com/privacy">https://supabase.com/privacy</a>). Because the identifier is not linked to you, we cannot look up your record from any personal information; you may request deletion by contacting the address in section 8 with the 4-character tag shown next to your entry. If the server is unreachable, the game works normally and no data is sent.</p>
 
+        <h3>Anonymous usage statistics</h3>
+        <p>To improve the app, it sends part of its usage anonymously to our server (since 1.4.0). What is sent:</p>
+        <ul>
+            <li>That the app was opened</li>
+            <li>For each finished round: its type (regular or Daily), grid size, completion time, whether it counts for the world board, and whether Pro was active when it ended</li>
+            <li>That the round setup sheet on the home screen was opened</li>
+            <li>That the Pro screen was shown and where it was opened from (iOS)</li>
+            <li>Completed purchases — the product name only, with no payment information (iOS)</li>
+            <li>That an interstitial ad was shown and at which point</li>
+        </ul>
+        <p>Sent along with it: the platform (iOS or Android), the app version, and a <strong>random identifier</strong> the app creates for this purpose (separate from the leaderboard identifier). This information is not linked to any account, name or advertising identifier and cannot identify you. <strong>Purpose:</strong> analysing how the app is used (ads shown, rounds played, app opens). <strong>Storage:</strong> Supabase (the same service as the leaderboard above). <strong>Retention:</strong> kept while the service operates, with no automatic deletion. Because it is tied only to the random identifier and cannot be traced to a person, we cannot process requests to delete an individual's statistics.</p>
+
         <h2>4. Advertising</h2>
-        <p>This app uses <strong>Google AdMob</strong> to display banner and interstitial advertisements. AdMob may collect device-level data such as:</p>
+        <p>This app uses <strong>Google AdMob</strong> to display banner, interstitial and native advertisements. AdMob may collect device-level data such as:</p>
         <ul>
             <li>Device advertising identifier (IDFA on iOS, AAID on Android)</li>
             <li>IP address, device type, and operating system version</li>
@@ -60,12 +73,12 @@
         <p>The app uses the following third-party services:</p>
         <ul>
             <li><strong>Google AdMob</strong> — for displaying advertisements</li>
-            <li><strong>Supabase</strong> — for storing anonymous leaderboard records</li>
+            <li><strong>Supabase</strong> — for storing anonymous leaderboard records and anonymous usage statistics</li>
             <li><strong>Apple App Store</strong> — for processing the optional Pro purchase on iOS; we do not receive payment details</li>
         </ul>
 
         <h2>7. Data Security</h2>
-        <p>The app transmits no personal information. Leaderboard records contain only a random identifier, board, time and mistake count, and are sent over HTTPS to a database that can only be accessed through validated server functions.</p>
+        <p>The app transmits no personal information. Leaderboard records contain only a random identifier, board, time and mistake count, and usage statistics only the items listed in section 3; both are sent over HTTPS to a database that can only be accessed through validated server functions.</p>
 
         <h2>8. Contact</h2>
         <p>If you have any questions about this privacy policy, please contact the developer at <a href="mailto:pilyeooong@gmail.com">pilyeooong@gmail.com</a>.</p>
