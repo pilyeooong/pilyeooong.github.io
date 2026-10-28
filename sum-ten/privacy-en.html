@@ -16,21 +16,28 @@
         <h1>Privacy Policy</h1>
         <p><strong>App Name:</strong> Sum Ten</p>
         <p><strong>Developer:</strong> pilyeooong</p>
-        <p><strong>Last Updated:</strong> May 12, 2026</p>
+        <p><strong>Last Updated:</strong> October 27, 2026</p>
 
         <h2>1. Personal Information Collection</h2>
-        <p>This app <strong>does not collect any personal information</strong> from users. No account registration, sign-in, or contact details are required.</p>
+        <p>This app does not collect information that identifies you personally, such as your name, contact details or location. No account registration, sign-in, or contact details are required.</p>
 
         <h2>2. Local Data Storage</h2>
-        <p>The app stores the following information locally on your device only (using AsyncStorage). This data never leaves your device:</p>
+        <p>The app stores the following information locally on your device (using AsyncStorage):</p>
         <ul>
             <li>Game score history</li>
+            <li>Your best score</li>
             <li>Your selected language preference</li>
+            <li>A record of which update notices and rating requests have been shown</li>
+            <li>A random identifier used for anonymous usage statistics (see Section 3)</li>
         </ul>
-        <p>Uninstalling the app removes all locally stored data.</p>
+        <p>The score history, best score, language preference and notice records never leave your device. The random identifier is sent together with the anonymous usage statistics described in Section 3. Uninstalling the app removes all locally stored data.</p>
 
-        <h2>3. Advertising</h2>
-        <p>This app uses <strong>Google AdMob</strong> to display banner and interstitial advertisements. AdMob may collect device-level data such as:</p>
+        <h2>3. Anonymous Usage Statistics</h2>
+        <p>The app stores anonymous usage statistics (round results, screen changes and ads shown, with a random identifier) in Supabase, a database hosting service (data processing is entrusted to Supabase). Each record also contains the app version and the device time. This data is not provided to any other third party, and it does not include your name, contact details or location.</p>
+        <p>The data is kept for as long as the service operates, and there is no automatic deletion. Because the identifier is random and not linked to you, we cannot process requests to delete individual records. Uninstalling the app removes the identifier from your device, so later records are no longer connected to earlier ones.</p>
+
+        <h2>4. Advertising</h2>
+        <p>This app uses <strong>Google AdMob</strong> to display banner, native, interstitial, app open and rewarded ads. AdMob may collect device-level data such as:</p>
         <ul>
             <li>Device advertising identifier (IDFA on iOS, AAID on Android)</li>
             <li>IP address, device type, and operating system version</li>
@@ -38,23 +45,25 @@
             <li>Ad interaction data (impressions, clicks)</li>
         </ul>
         <p>This data is collected by Google and used in accordance with Google's privacy policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+        <p>The app requests non-personalized ads only and does not ask for tracking permission.</p>
 
-        <h2>4. Children's Privacy</h2>
+        <h2>5. Children's Privacy</h2>
         <p>This app is suitable for all ages and does not knowingly collect personal information from children under 13.</p>
 
-        <h2>5. Third-Party Services</h2>
+        <h2>6. Third-Party Services</h2>
         <p>The app uses the following third-party services:</p>
         <ul>
             <li><strong>Google AdMob</strong> — for displaying advertisements</li>
+            <li><strong>Supabase</strong> — for storing anonymous usage statistics (data processing entrusted)</li>
         </ul>
 
-        <h2>6. Data Security</h2>
-        <p>Since the app does not collect or transmit personal information, there is no risk of data breach related to your personal data on our side.</p>
+        <h2>7. Data Security</h2>
+        <p>Anonymous usage statistics are sent over an encrypted HTTPS connection.</p>
 
-        <h2>7. Contact</h2>
+        <h2>8. Contact</h2>
         <p>If you have any questions about this privacy policy, please contact the developer at <a href="mailto:pilyeooong@gmail.com">pilyeooong@gmail.com</a>.</p>
 
-        <h2>8. Policy Changes</h2>
+        <h2>9. Policy Changes</h2>
         <p>This privacy policy may be updated. The latest version is always available at this URL.</p>
     </div>
 </body>
