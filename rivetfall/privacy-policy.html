@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rivetfall - Privacy Policy</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.7; color: #333; background: #fafafa; padding: 20px; }
+    .container { max-width: 720px; margin: 0 auto; background: #fff; border-radius: 12px; padding: 40px 32px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+    h1 { font-size: 24px; margin-bottom: 8px; color: #111; }
+    h2 { font-size: 18px; margin-top: 32px; margin-bottom: 12px; color: #222; border-bottom: 1px solid #eee; padding-bottom: 6px; }
+    p, li { font-size: 15px; margin-bottom: 8px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    .date { font-size: 13px; color: #888; margin-bottom: 24px; }
+    .lang-switch { text-align: right; margin-bottom: 20px; }
+    .lang-switch a { font-size: 14px; color: #3182F6; text-decoration: none; margin-left: 12px; }
+    a { color: #3182F6; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="lang-switch">
+      <a href="privacy-policy.html">English</a>
+      <a href="privacy-ko.html">한국어</a>
+    </div>
+
+    <h1>Privacy Policy</h1>
+    <p class="date">Effective date: November 17, 2026</p>
+
+    <p>This policy applies to the mobile app "Rivetfall" (the "App"). The App does not require sign-up or login and does not collect your name, email address, phone number, or any other information that directly identifies you.</p>
+
+    <h2>1. Information Collected</h2>
+    <p>The App itself collects the following. None of it is linked to an account or to your identity.</p>
+    <ul>
+      <li>Random device identifiers: the App creates random identifiers on your device (one for anonymous usage statistics, one for the daily leaderboard). They are not your advertising ID, not an account, and not linked to any other identifier.</li>
+      <li>Leaderboard records (Daily Run only): the date and generator version of the run, seconds survived, number of armor plates broken, number of boss waves cleared, and a score the server calculates from those values.</li>
+      <li>Anonymous usage statistics: events such as session start, run results (mode, score, time, plates broken, missed targets, marks, bosses, cause of defeat, starting character and main weapon), tutorial completion, level-up choices, chest grade and opening, evolutions and unlocks, Daily Run starts, share-button taps, opening a shared link, resuming a run, theme changes, ads shown (type only), opening the purchase screen, whether the purchase was completed (product ID only; no payment details), and runs the leaderboard server rejected (reason and time rounded to the minute). Each event also carries the platform (iOS or Android), the app version, and the device time.</li>
+    </ul>
+    <p>The leaderboard server and the statistics server receive your network request, which technically includes your IP address. The App's database tables have no column for it and the App does not store it there.</p>
+    <p>Google AdMob, which the App uses to show ads, may automatically collect the following (see section 3):</p>
+    <ul>
+      <li>Advertising identifier (IDFA / Android advertising ID) — not used for tracking (non-personalized ads only)</li>
+      <li>Device information (model, OS version)</li>
+      <li>App usage data (ad impressions, clicks)</li>
+      <li>IP address (for approximate location estimation)</li>
+    </ul>
+
+    <h2>2. Purpose of Use</h2>
+    <ul>
+      <li>Providing an anonymous daily leaderboard (device identifier, run records)</li>
+      <li>Understanding and improving how the App is used and how its balance feels (anonymous usage statistics)</li>
+      <li>Understanding and improving the purchase flow (anonymous purchase event)</li>
+      <li>Serving non-personalized ads only; measuring ad performance (Google AdMob)</li>
+    </ul>
+
+    <h2>3. Third-Party Sharing and Processing</h2>
+    <p>Leaderboard records and anonymous usage statistics are stored with Supabase, a database hosting service, which acts as a processor on our behalf. They are not shared with any other third party.</p>
+    <p>The App uses the Google AdMob SDK to display ads. For details on Google's data collection and use, see <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
+
+    <h2>4. What Others Can See</h2>
+    <p>The leaderboard shows other players only your rank, score, seconds survived, plates broken, boss waves cleared, and a 4-character anonymous tag derived from your device identifier. Your device identifier itself is never shown to other players, and no name or account is displayed.</p>
+
+    <h2>5. App Tracking Transparency (ATT)</h2>
+    <p>The App does not track users and does not request App Tracking Transparency (ATT) permission. Only non-personalized ads are requested, and the advertising identifier is not used for tracking.</p>
+
+    <h2>6. Data Retention and Deletion</h2>
+    <ul>
+      <li>Leaderboard records are deleted automatically after 30 days (a daily clean-up job).</li>
+      <li>Raw anonymous usage records are deleted automatically after 30 days. After that, only daily totals with no identifiers (event counts and device counts) are kept for as long as the service is operated.</li>
+      <li>Because these records are tied only to a random identifier and cannot identify an individual, individual deletion requests cannot be matched to a person. Everything linked to the identifier disappears from the servers within 30 days on its own.</li>
+      <li>On your device, the App stores settings, progress, Daily Run records, a saved run for resuming, a record of tutorial and tip display, rating-prompt and update-prompt records, purchase status, and the random identifiers. All of it is removed when you uninstall the App.</li>
+      <li>Data collected by Google AdMob is governed by Google's policies.</li>
+    </ul>
+
+    <h2>7. Children's Privacy</h2>
+    <p>The App is not directed at children under 13 and does not knowingly collect personal information from children.</p>
+
+    <h2>8. Changes</h2>
+    <p>Any changes to this policy will be posted on this page together with a new effective date.</p>
+
+    <h2>9. Contact</h2>
+    <p>Privacy inquiries (data protection officer): <a href="mailto:pilyeooong@gmail.com">pilyeooong@gmail.com</a></p>
+  </div>
+</body>
+</html>
