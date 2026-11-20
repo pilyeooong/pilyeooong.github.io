@@ -34,12 +34,20 @@
   <div class="container">
     <div class="lang-switch"><a href="privacy-ko.html">한국어</a></div>
     <h1>Breathe Easy - Privacy Policy</h1>
-    <p class="date">Effective date: March 21, 2026</p>
+    <p class="date">Effective date: November 20, 2026</p>
 
     <p>This Privacy Policy describes how "Breathe Easy" (the "App") handles your information when you use our mobile application.</p>
 
     <h2>1. Information We Collect</h2>
-    <p>The App does not directly collect any personal information. All data (breathing session history, language preferences) is stored locally on your device and is never transmitted to external servers.</p>
+    <p>The only data the App itself collects is the anonymous usage statistics below:</p>
+    <ul>
+      <li>A random device identifier created by the App (not the advertising identifier IDFA)</li>
+      <li>App version</li>
+      <li>Events: app start, breathing session start and completion with the technique used (including the day streak), type and placement of ads shown, and responses to the update notice</li>
+      <li>The device time of each event</li>
+    </ul>
+    <p>Your name, contact details, advertising identifier (IDFA) and the content of your breathing history are not sent.</p>
+    <p>Your breathing session history and language preference are stored only on your device. The device also keeps a backup of history that could no longer be read, a record of update notices shown, a record of rating requests, and the random identifier used for statistics.</p>
     <p>However, the following information may be automatically collected by third-party advertising services:</p>
     <ul>
       <li>Advertising identifier (IDFA)</li>
@@ -52,13 +60,15 @@
       <li>Display advertisements within the App</li>
       <li>Measure advertising performance</li>
       <li>Provide personalised ads (with user consent)</li>
+      <li>Analyse anonymous usage statistics to improve features and ad placement</li>
     </ul>
 
     <h2>3. Data Retention</h2>
-    <p>The App does not retain any personal data on external servers. Advertising-related data retention is governed by Google's Privacy Policy.</p>
+    <p>Raw anonymous usage statistics are kept on Supabase for 30 days, after which only daily counts (including the number of devices, without identifiers) are kept. Because the identifier is random, we cannot look up or delete an individual's data on request. Advertising-related data retention is governed by Google's Privacy Policy.</p>
 
     <h2>4. Third-Party Services</h2>
-    <p>The App uses Google AdMob for advertising. For details on how Google collects and processes data, please refer to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
+    <p>The App uses Google AdMob for advertising (banner, native, interstitial and app open ads). For details on how Google collects and processes data, please refer to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
+    <p>Anonymous usage statistics are stored on Supabase, which processes them on our behalf. We do not share data with any other third party.</p>
 
     <h2>5. App Tracking Transparency (ATT)</h2>
     <p>On iOS 14.5 and later, the App requests your consent before tracking your activity. You may decline tracking without any impact on App functionality; non-personalised ads will be shown instead.</p>
@@ -66,6 +76,7 @@
     <h2>6. Your Rights</h2>
     <ul>
       <li>Deleting the App removes all locally stored data from your device.</li>
+      <li>Deleting the App also removes the device identifier, so later statistics are not linked to earlier ones.</li>
       <li>You can change ad tracking permissions at any time in iOS Settings.</li>
       <li>You can reset your advertising identifier to limit personalised ads.</li>
     </ul>
