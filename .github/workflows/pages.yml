@@ -32,6 +32,10 @@ jobs:
         with:
           path: '.'
 
+      # 업로드 직후 바로 조회하면 아티팩트 목록에 아직 없어 "No artifacts named github-pages"로 실패한다(2026-11-25 반복 발생)
+      - name: Wait for artifact to be listed
+        run: sleep 15
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
